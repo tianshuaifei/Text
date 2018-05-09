@@ -37,8 +37,8 @@ encoded_b = shared_lstm(tweet_b_emb)
 # We can then concatenate the two vectors:
 # merged_vector =Cosine([encoded_a, encoded_b])
 # merged_vector_em=Reshape(2)
-#merged_vector = keras.layers.concatenate([encoded_a, encoded_b], axis=-1)
-merged_vector = keras.layers.dot([encoded_a, encoded_b],axes=-1)
+merged_vector = keras.layers.concatenate([encoded_a, encoded_b], axis=-1)
+# merged_vector = keras.layers.dot([encoded_a, encoded_b],axes=-1)
 # And add a logistic regression on top
 predictions = Dense(num_classes, activation='softmax')(merged_vector)
 
