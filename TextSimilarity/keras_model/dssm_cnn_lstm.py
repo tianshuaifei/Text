@@ -51,7 +51,7 @@ merged_vector = keras.layers.dot([encoded_a_lstm, encoded_b_lstm],axes=-1)
 predictions = Dense(num_classes, activation='softmax')(merged_vector)
 
 
-model = Model(inputs=[encoded_a_lstm, encoded_b_lstm], outputs=predictions)
+model = Model(inputs=[tweet_a, tweet_b], outputs=predictions)
 model.compile(optimizer='rmsprop',
               loss='binary_crossentropy',
               metrics=['accuracy'])
