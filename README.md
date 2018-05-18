@@ -7,4 +7,4 @@
 * DSSM-LSTM
 * DSSM-CNN
 * LSTM-TOPIC
-http://www.voidcn.com/article/p-zdcttgcm-zw.html
+* http://www.voidcn.com/article/p-zdcttgcm-zw.html
